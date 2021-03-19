@@ -1,6 +1,10 @@
 ---
 layout: default
-title: Hello World page
+title: First test page
 ---
-## hello world (updated)
+
+## Title 1
+This is an example of documentation page
+
+### Title 2
 This is an example of documentation page
