@@ -117,3 +117,36 @@ You can also add additional apps and assign to Security group.
 ![](images/Intune_Android/08.jpg)  
 
 
+### Full manage Android configuration 
+#### Zero touch  
+
+#### Use QR code  
+##### Enroll by using a token  
+* For Android 6 and newer devices, you can use the token value, such as 12345, to enroll the device.  
+* Android 6.1 and newer versions can also leverage QR code scanning when using the afw#setup enrollment method.  
+* For corporate-owned work profile (COPE) devices, the afw#setup enrollment method is only supported on devices running Android 8-10. It's not available on Android 11. For further details, refer to the Google developer docs here.  
+
+##### Steps  
+1. Turn on your wiped device.
+2. On the Welcome screen, select your language.
+3. Connect to your Wifi, and then choose NEXT.
+4. Accept the Google Terms and conditions, and then choose NEXT.
+5. On the Google sign-in screen, enter afw#setup instead of a Gmail account, and then choose NEXT.
+6. Choose INSTALL for the Android Device Policy app.
+7. Continue installation of this policy. Some devices may require additional terms acceptance.
+8. On the Enroll this device screen, allow your device to scan the QR code. Or, choose to enter the token manually.
+9. Follow the on-screen prompts to complete enrollment.  
+
+Full version on microsoft:  
+https://docs.microsoft.com/en-us/mem/intune/enrollment/android-dedicated-devices-fully-managed-enroll#enroll-by-using-a-token
+
+
+##### QR CODE FOR SVETEKDEV
+![](images/Intune_Android/svetekdev_qr_enrollment.png)
+
+### List Android Devices FOR ENTPERPRISE
+Full list devices recommendet with Android Enterprise youu can see:  
+https://androidenterprisepartners.withgoogle.com/devices/#!?AER
+
+Where you can buy that devices:   
+https://androidenterprisepartners.withgoogle.com/resellers
