@@ -1,3 +1,7 @@
+---
+layout: default
+title: Microsoft Intune Setup
+---
 # Intune setup
 
 ## Azure Intune configuration 
