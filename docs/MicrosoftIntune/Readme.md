@@ -131,7 +131,7 @@ You can also add additional apps and assign to Security group.
 2. On the Welcome screen, select your language.
 3. Connect to your Wifi, and then choose NEXT.
 4. Accept the Google Terms and conditions, and then choose NEXT.
-5. On the Google sign-in screen, enter afw#setup instead of a Gmail account, and then choose NEXT.
+5. On the Google sign-in screen, enter **afw#setup** instead of a Gmail account, and then choose NEXT.
 6. Choose INSTALL for the Android Device Policy app.
 7. Continue installation of this policy. Some devices may require additional terms acceptance.
 8. On the Enroll this device screen, allow your device to scan the QR code. Or, choose to enter the token manually.
