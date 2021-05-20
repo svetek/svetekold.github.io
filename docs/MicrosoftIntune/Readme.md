@@ -86,7 +86,7 @@ After your Intune account is connected to your Android enterprise account, you c
 7. Click Select to select the app.  
 8. Select Sync at the top to sync the app with the Managed Google Play service.  
 9. Select Refresh to update the app list and display the newly added app.
-10. After the app is added to Microsoft Intune, you can assign the app to users and devices.  
+10. After the app is added to Microsoft Intune, you can assign the app to users and devices.   
     go to Apps | All Apps and look under Manage to see the app displayed in the list.
 11. To assign the app to a group, select the app that you want to assign. In the Manage section of the menu, select Properties, and then select Edit next to Assignments to open the Add group pane.      
 12. In the Assignments tab, under Required, select Add group, select the groups to include, and then select Select.  
