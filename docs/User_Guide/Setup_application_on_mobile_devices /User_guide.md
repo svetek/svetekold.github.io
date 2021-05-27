@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Configuration
+title: User guide
 nav_order: 2
 nav_exclude: false
 has_children: true
 ---
 
-# Configuration pages
+# User Guides pages
