@@ -8,7 +8,7 @@ parent: Configuration
 ---
 
 # DUO protect application Microsoft Azure Active Directory
-## 
+
 
 Login https://duosecurity.com 
 and go to Application - Protect an Application  
