@@ -1,6 +1,9 @@
 ---
 layout: default
 title: DUO MFA integration with Azure Active Directory
+nav_order: 2
+nav_exclude: false
+has_children: false
 ---
 
 # DUO protect application Microsoft Azure Active Directory

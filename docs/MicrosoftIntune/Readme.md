@@ -1,6 +1,9 @@
 ---
 layout: default
 title: Microsoft Intune Setup
+nav_order: 1
+nav_exclude: false
+has_children: false
 ---
 # Intune setup
 
