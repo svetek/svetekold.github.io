@@ -31,6 +31,9 @@ theme: "just-the-docs"
 #   - vendor/gems/
 #   - vendor/ruby/
 
+# Color scheme currently only supports "dark", "light"/nil (default), or a custom scheme that you define
+color_scheme: dark
+
 # Google Analytics Tracking
 # ga_tracking: UA-5555555-55
 # ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true by default)
@@ -41,4 +44,4 @@ gh_edit_link: false
 aux_links:
   "Back to site":
     - "//www.svetek.com"
-  
+aux_links_new_tab: true
