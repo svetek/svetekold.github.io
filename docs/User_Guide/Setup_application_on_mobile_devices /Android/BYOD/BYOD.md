@@ -10,7 +10,7 @@ grand_parent: User guide
 
 # Bring your own devices
 Open Play Market on your own Android Devices  
-![](images/BYOD_01.png)
+![](images/BYOD_01.png | width=250)
 
 Type in search field "Microsoft Portal" and select "Intune Company Portal" app  
 ![](images/BYOD_02.png)
