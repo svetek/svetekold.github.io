@@ -10,46 +10,46 @@ grand_parent: User guide
 
 # Bring your own devices
 Open Play Market on your own Android Devices  
-![](images/BYOD_01.png){:height="700px" width="400px"}
+![](images/BYOD_01.png){:height="600px" width="400px"}
 
 Type in search field "Microsoft Portal" and select "Intune Company Portal" app  
-![](images/BYOD_02.png)
+![](images/BYOD_02.png){:height="600px" width="400px"}
 
 Press "Install"  
-![](images/BYOD_03.png)
+![](images/BYOD_03.png){:height="600px" width="400px"}
 
 When install is done, press "Open"  
-![](images/BYOD_04.png)
+![](images/BYOD_04.png){:height="600px" width="400px"}
 
 When Microsoft Portal is up, press "Sign in" button  
-![](images/BYOD_05.png)
+![](images/BYOD_05.png){:height="600px" width="400px"}
 
 Enter you corporate user name and password  
-![](images/BYOD_06.png)
+![](images/BYOD_06.png){:height="600px" width="400px"}
 
 Tap "Skip for now"
-![](images/BYOD_07.png)
+![](images/BYOD_07.png){:height="600px" width="400px"}
 
 Tap "Begin" button
-![](images/BYOD_08.png)
+![](images/BYOD_08.png){:height="600px" width="400px"}
 
 Tap "Continue"
-![](images/BYOD_09.png)
+![](images/BYOD_09.png){:height="600px" width="400px"}
 
 Tap "Accept & Continue"
-![](images/BYOD_10.png)
+![](images/BYOD_10.png){:height="600px" width="400px"}
 
 Tap "Continue"
-![](images/BYOD_11.png)
+![](images/BYOD_11.png){:height="600px" width="400px"}
 
 Tap "Done"
-![](images/BYOD_12.png)
+![](images/BYOD_12.png){:height="600px" width="400px"}
 
 Tap "Got it"
-![](images/BYOD_13.png)
+![](images/BYOD_13.png){:height="600px" width="400px"}
 
 After all steps, your own devices will be install on work profile all apps
-![](images/BYOD_14.png)
+![](images/BYOD_14.png){:height="600px" width="400px"}
 
 Now, you can use corporate apps for secure work communications. 
 
