@@ -4,7 +4,7 @@ title: DUO MFA for RDP or WVD
 nav_order: 2
 nav_exclude: false
 has_children: false
-parent: DUO MFA integration with Azure Active Directory
+parent: Configuration
 ---
 # DUO MFA for RDP or WVD
 If we want use DUO MFA on WVD, we must install DUO agent on all Windows 10 VMs for support authorisation DUO MFA.   
