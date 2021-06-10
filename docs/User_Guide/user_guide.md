@@ -6,4 +6,4 @@ nav_exclude: false
 has_children: true
 ---
 
-# User Guides pages
+# User Guides
