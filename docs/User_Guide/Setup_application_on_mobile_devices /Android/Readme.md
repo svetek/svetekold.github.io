@@ -4,7 +4,7 @@ title: Android enrolment
 nav_order: 1
 nav_exclude: false
 has_children: true
-parent: User guide
+parent: User Guides
 ---
 
 # Configuration Android Devices

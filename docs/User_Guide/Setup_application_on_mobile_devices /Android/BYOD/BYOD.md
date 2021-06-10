@@ -5,7 +5,7 @@ nav_order: 1
 nav_exclude: false
 has_children: false
 parent: Android enrolment
-grand_parent: User guide
+grand_parent: User Guides
 ---
 
 # Bring your own devices
