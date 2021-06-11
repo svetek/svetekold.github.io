@@ -12,7 +12,7 @@ grand_parent: User Guides
 ## INSTALL DUO MOBILE ON YOUR ANDROID DEVICE  
 Open Google Play on your Android device, and type DUO mobile.  
 You will select DUO Mobile app.     
-![](images/DUO_INSTALL_SOFTWARE_01.png){:height="600px" width="400px"} 
+![](images/DUO_INSTALL_SOFTWARE_01.png){:height="600px" width="400px"}  
 Press install for start installation process  
 ![](images/DUO_INSTALL_SOFTWARE_02.png){:height="600px" width="400px"}  
 When installation is done, press open button for start DUO mobile app.  
@@ -27,7 +27,7 @@ Scan QR code when you gо to the previous step
 
 ## GENERATE QR CODE FOR DEVICE
 You will recived email from Administrator with URL enrollment link:   
-![](images/DUO_ENROLLMENT_DEVICE_01.png){:height="1024px" width="400px"}  
+![](images/DUO_ENROLLMENT_DEVICE_01.png)
 ![](images/DUO_ENROLLMENT_DEVICE_02.png)  
 Open URL link and press Start Setup  
 ![](images/DUO_ENROLLMENT_DEVICE_03.png)  
