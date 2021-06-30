@@ -20,9 +20,12 @@ You will see starting process download and Install app
 ![](images/step_05.png)  
 When installation process done, you will press "Launch" button  
 ![](images/step_06.png)  
-![](images/step_07.png)   
+![](images/step_07.png)     
+  
+Installation is done. 
 
-# ADD WORKSPACE ACCESS TO Microsoft Remote Desktop
+
+# ADD WORKSPACE ACCESS 
 Now you need add User Workspace. Press "ADD" -> "Workspaces"  
 ![](images/step_08.png)  
 Email or Workspace URL type: https://rdweb.wvd.microsoft.com/api/arm/feeddiscovery  and press "Subscribe button"  
