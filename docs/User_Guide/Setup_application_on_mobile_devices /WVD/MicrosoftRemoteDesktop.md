@@ -22,7 +22,7 @@ When installation process done, you will press "Launch" button
 ![](images/step_06.png)  
 ![](images/step_07.png)     
   
-Installation is done. 
+Installation is done.  
 
 
 # ADD WORKSPACE ACCESS 
