@@ -6,14 +6,22 @@ nav_exclude: false
 has_children: false
 parent: Configuration
 ---
-#FSLogix UserProfiles
+# FSLogix UserProfiles
 
 
-##ON VM DC
+## ON VM DC
 Download https://github.com/Azure-Samples/azure-files-samples/releases
 and unzip package
 ```
-cd F:\AzFilesHybrid
+#Create temp folder
+New-Item -Path 'C:\temp' -ItemType Directory -Force | Out-Null
+
+$wc = New-Object System.Net.WebClient
+Write-Output $wc.DownloadFileTaskAsync("https://github.com/Azure-Samples/azure-files-samples/releases/download/v0.2.3/AzFilesHybrid.zip", "C:\temp\AzFilesHybrid.zip")
+
+Expand-Archive -LiteralPath 'C:\temp\AzFilesHybrid.zip' -DestinationPath C:\temp\AzFilesHybrid
+cd C:\temp\AzFilesHybrid 
+
 Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser
 #Install-PackageProvider -Name NuGet -Force
 Import-Module -Name .\AzFilesHybrid.psd1
