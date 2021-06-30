@@ -6,12 +6,10 @@ nav_exclude: false
 has_children: false
 parent: Configuration
 ---
+#FSLogix UserProfiles
 
 
-# FSLogix UserProfiles
-
-
-####ON VM DC
+##ON VM DC
 Download https://github.com/Azure-Samples/azure-files-samples/releases
 and unzip package
 ```
