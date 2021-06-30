@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Install Microsoft Remote Desktop
+title: Install Microsoft Remote Desktop (RDP Client)
 nav_order: 2
 nav_exclude: false
 has_children: false
 parent: User Guides
 ---
 
-# Install Microsoft Remote Desktop Windows 10
+# Install Microsoft Remote Desktop Windows 10 (RDP Client)
 If you use Windows 10 run Microsoft Store just type in search "store" and press on Microsoft Store  
 ![](images/step_01.png)     
 On new windows Microsoft Store in search input type "Remote Desktop" and select "Microsoft Remote Desktop"  
@@ -21,6 +21,8 @@ You will see starting process download and Install app
 When installation process done, you will press "Launch" button  
 ![](images/step_06.png)  
 ![](images/step_07.png)   
+
+# ADD WORKSPACE ACCESS TO Microsoft Remote Desktop
 Now you need add User Workspace. Press "ADD" -> "Workspaces"  
 ![](images/step_08.png)  
 Email or Workspace URL type: https://rdweb.wvd.microsoft.com/api/arm/feeddiscovery  and press "Subscribe button"  
