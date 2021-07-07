@@ -5,6 +5,7 @@ nav_order: 1
 nav_exclude: false
 has_children: false
 parent: Windows Virtual Desktop
+grand_parent: User Guides
 ---
 
 # Install Microsoft Remote Desktop Windows 10 (RDP Client)
