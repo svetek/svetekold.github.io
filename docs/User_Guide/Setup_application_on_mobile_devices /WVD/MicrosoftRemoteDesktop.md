@@ -3,7 +3,7 @@ layout: default
 title: Install Microsoft Remote Desktop (RDP Client)
 nav_order: 4
 nav_exclude: false
-has_children: false
+has_children: true
 parent: Windows Virtual Desktop
 ---
 
