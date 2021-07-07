@@ -25,7 +25,7 @@ When installation process done, you will press "Launch" button
 Installation is done.  
 
 
-# ADD WORKSPACE ACCESS 
+## ADD WORKSPACE ACCESS 
 Now you need add User Workspace. Press "ADD" -> "Workspaces"  
 ![](images/step_08.png)  
 Email or Workspace URL type: https://rdweb.wvd.microsoft.com/api/arm/feeddiscovery  and press "Subscribe button"  
@@ -36,4 +36,18 @@ Press "Work or school account"
 ![](images/step_11.png)  
 Done, now you can try connect to the SessionDesktop or WVD APPs.  
 ![](images/step_12.png)   
+
+## Configure redirection folders  
+### OS X  
+Open Microsoft Remote Desktop app and got to "Preferences...".  
+![](images/WVD_OSX_CLIENT_01.png)   
+
+Open DropDown "if folder redirection is enabled for RDP. ..." and select "Choose folder".  
+![](images/WVD_OSX_CLIENT_02.png)   
+
+Select local folder for redirect to WVD session host.  
+![](images/WVD_OSX_CLIENT_03.png)   
+
+Try connect and check redirection folder  
+![](images/WVD_OSX_CLIENT_04.png)   
 
