@@ -104,14 +104,19 @@ Write-Host "*** FSLogix Install time: "$scriptActionDuration.Minutes "Minute(s),
 New-ItemProperty -Path $registryPath -Name "Enabled" -Value 1 -PropertyType DWORD -Force | Out-Null
 New-ItemProperty -Path $registryPath -Name "DeleteLocalProfileWhenVHDShouldApply" -Value 1 -PropertyType DWORD -Force | Out-Null
 New-ItemProperty -Path $registryPath -Name "PreventLoginWithFailure" -Value 1 -PropertyType DWORD -Force | Out-Null
+
+# MULTIPLY SESSIONS
+New-ItemProperty -Path $registryPath -Name "ConcurrentUserSessions" -Value 1 -PropertyType DWORD -Force | Out-Null
+New-ItemProperty -Path "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\FSLogix\ODFC" -Name "ConcurrentUserSessions" -Value 1 -PropertyType DWORD -Force | Out-Null
+
 New-ItemProperty -Path $registryPath -Name "VHDLocations" -Value "\\churchwvd.file.core.windows.net\fslogixpe" -PropertyType MultiString -Force | Out-Null
  ######################
-# Install DUO Login
+# Install DUO Login https://help.duo.com/s/article/1090?language=en_US
 
 $DouIKEY = "DIXXXXXXXXXXXXXXXXXXXX"
 $DuoSKEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 $DouHostAPI = "api-xxxxxxxx.duosecurity.com"
-$DouArguments = @('/S', '/V"', '/qn', "IKEY='$DouIKEY'", "SKEY='$DuoSKEY'", "HOST='$DouHostAPI'", 'AUTOPUSH="#1"', 'FAILOPEN="#1"', 'SMARTCARD="#1"', 'RDPONLY="#0""')
+$DouArguments = @('/S', '/V"', '/qn', "IKEY='$DouIKEY'", "SKEY='$DuoSKEY'", "HOST='$DouHostAPI'", 'AUTOPUSH="#1"', 'FAILOPEN="#1"', 'SMARTCARD="#1"', 'RDPONLY="#0"', 'UAC_PROTECTMODE=#2')
 
 echo $DouArguments
 

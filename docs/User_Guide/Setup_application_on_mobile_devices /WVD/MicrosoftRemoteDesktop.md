@@ -4,7 +4,7 @@ title: Install Microsoft Remote Desktop (RDP Client)
 nav_order: 4
 nav_exclude: false
 has_children: false
-parent: User Guides
+parent: Windows Virtual Desktop
 ---
 
 # Install Microsoft Remote Desktop Windows 10 (RDP Client)
