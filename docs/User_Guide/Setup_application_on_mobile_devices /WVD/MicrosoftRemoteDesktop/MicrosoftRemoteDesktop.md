@@ -20,6 +20,19 @@ Download MSI on your PC use that URL:
 [Windows ARM64](https://go.microsoft.com/fwlink/?linkid=2098961)  
   
 When downloading is done, run installation MSI double click on file:   
+![](../images/rdclient_install_from_msi_01.png)  
+Press RUN button  
+![](../images/rdclient_install_from_msi_02.png)  
+On Welcome installation windows press Next  
+![](../images/rdclient_install_from_msi_03.png)  
+Click on checkbox "I accept ...." and press Next  
+![](../images/rdclient_install_from_msi_04.png)  
+Click on "Install for all users" and press Next  
+![](../images/rdclient_install_from_msi_05.png)  
+Press Yes  
+![](../images/rdclient_install_from_msi_06.png) 
+Installation is done. Press Finish for close window and run app.    
+![](../images/rdclient_install_from_msi_07.png)  
 
 ![](../images/step_07.png)     
   
