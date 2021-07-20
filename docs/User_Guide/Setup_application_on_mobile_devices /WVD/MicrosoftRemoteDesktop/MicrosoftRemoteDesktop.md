@@ -13,7 +13,7 @@ grand_parent: User Guides
 1. TOC
 {:toc}
 
-# Install Microsoft Remote Desktop Windows 10 (RDP Client) from msi package
+# Install Microsoft Remote Desktop Windows 10 (RDP Client) from msi package (Recommended!!!)
 Download MSI on your PC use that URL:   
 [Windows 64-bit](https://go.microsoft.com/fwlink/?linkid=2068602)    
 [Windows 32-bit](https://go.microsoft.com/fwlink/?linkid=2098960)   
@@ -53,7 +53,7 @@ When installation process done, you will press "Launch" button
 ![](../images/step_06.png)  
 ![](../images/step_07.png)     
   
-Installation is done.  
+Installation is done.  Go to "ADD WORKSPACE" for configuration Microsoft Remote Desktop.  
 
 
 # ADD WORKSPACE ACCESS 
