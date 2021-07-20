@@ -18,7 +18,9 @@ This section describes how to configure Microsoft Azure Active Directory to prov
 6. Navigate back to Enterprise Applications and then click Confluence SAML SSO by Microsoft app.
 7. Click Single sign-on and then choose SAML for Mode.
 8. On the Set up Single Sign-On with SAML page, click Edit icon to open Basic SAML Configuration dialog.
+    ![](images/zoho_sso_azuread_02.png)  
 9. On the Basic SAML Configuration section, do the following:
+    ![](images/zoho_sso_azuread_01.png)  
    * In the Identifier text box, enter zoho.com
    * Note(1): If the IdP doesn't support a duplicate Identifier, you can edit the Entity ID field in Zoho Desk to select the alternative and enter the same.
    * Note(2): If you are on the .eu domain enter zoho.eu. Likewise, enter zoho.in if you are on the .in domain.
