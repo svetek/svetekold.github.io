@@ -36,7 +36,7 @@ Installation is done. Press Finish for close window and run app.
 
 ![](../images/step_07.png)     
   
-Installation is done.  
+Installation is done.  Go to "ADD WORKSPACE" for configuration Microsoft Remote Desktop.  
 
 # Install Microsoft Remote Desktop Windows 10 (RDP Client) from Microsoft store
 If you use Windows 10 run Microsoft Store just type in search "store" and press on Microsoft Store  
