@@ -8,7 +8,19 @@ parent: Windows Virtual Desktop
 grand_parent: User Guides
 ---
 
-# Install Microsoft Remote Desktop Windows 10 (RDP Client)
+# Install Microsoft Remote Desktop Windows 10 (RDP Client) from msi package
+Download MSI on your PC use that URL:   
+[Windows 64-bit](https://go.microsoft.com/fwlink/?linkid=2068602)    
+[Windows 32-bit](https://go.microsoft.com/fwlink/?linkid=2098960)   
+[Windows ARM64](https://go.microsoft.com/fwlink/?linkid=2098961)  
+  
+When downloading is done, run installation MSI double click on file:   
+
+![](../images/step_07.png)     
+  
+Installation is done.  
+
+# Install Microsoft Remote Desktop Windows 10 (RDP Client) from Microsoft store
 If you use Windows 10 run Microsoft Store just type in search "store" and press on Microsoft Store  
 ![](../images/step_01.png)     
 On new windows Microsoft Store in search input type "Remote Desktop" and select "Microsoft Remote Desktop"  
