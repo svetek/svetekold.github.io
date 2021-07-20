@@ -7,6 +7,11 @@ has_children: false
 parent: Windows Virtual Desktop
 grand_parent: User Guides
 ---
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
 
 # Install Microsoft Remote Desktop Windows 10 (RDP Client) from msi package
 Download MSI on your PC use that URL:   
