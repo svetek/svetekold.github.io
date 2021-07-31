@@ -10,10 +10,10 @@ grand_parent: User Guides
 ## Table of contents
 {: .no_toc .text-delta }
 
-1. TOC
-   {:toc}
+1. TOC 
+{:toc}
    
-# Azure Virtual Desktop WEB Client 
+# Azure Virtual Desktop WEB Client
 In a browser, navigate to the Azure Resource Manager-integrated version of the Azure Virtual Desktop web client at https://rdweb.wvd.microsoft.com/arm/webclient and sign in with your user account.  
 
 Enter your work username  
