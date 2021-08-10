@@ -154,3 +154,9 @@ https://androidenterprisepartners.withgoogle.com/devices/#!?AER
 
 Where you can buy that devices:   
 https://androidenterprisepartners.withgoogle.com/resellers
+
+---
+### REFERENCES
+[Original: Configure android enterprise devices intune](https://docs.microsoft.com/en-us/troubleshoot/mem/intune/configure-android-enterprise-devices-intune)  
+[Original: Android dedicated devices fully managed enroll#enroll-by-using-a-token](https://docs.microsoft.com/en-us/mem/intune/enrollment/android-dedicated-devices-fully-managed-enroll#enroll-by-using-a-token)  
+

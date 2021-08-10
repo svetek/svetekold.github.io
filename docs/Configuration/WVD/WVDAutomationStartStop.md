@@ -238,4 +238,5 @@ while ($count -lt $allHostPools.Count) {
 Press Save and Test/Run for testing script 
 
 ![](./images/WVDAutomationStartStop_21.png)  
+
   

@@ -10,6 +10,30 @@ parent: Configuration
 
 
 ## ON VM DC
+#### ENABLE Acelerator Network on VM D2sV4
+```
+$VMResGroup="RG-US-WVD-VM-WEST"
+$VMWVDNAME="vm-wvd-west-2111" 
+
+ # Acelerator Network Enabled 
+$nic = Get-AzNetworkInterface -ResourceGroupName $VMResGroup -Name $VMWVDNAME
+$nic.EnableAcceleratedNetworking = $true
+$nic | Set-AzNetworkInterface 
+```
+
+#### JOIN TO AD
+```
+add-computer –domainname "miatech.local"  -restart
+```
+#### JOIN EXIST VM TO HOSTPOOL
+https://docs.microsoft.com/en-us/azure/virtual-desktop/create-host-pools-powershell#register-the-virtual-machines-to-the-azure-virtual-desktop-host-pool
+Download MSI package
+    https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrmXv
+    https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrxrH
+
+
+
+
 Download https://github.com/Azure-Samples/azure-files-samples/releases
 and unzip package
 ```
@@ -78,6 +102,8 @@ $files = @(
     @{url = "https://download.microsoft.com/download/4/8/2/4828e1c7-176a-45bf-bc6b-cce0f54ce04c/FSLogix_Apps_2.9.7654.46150.zip"; path = "c:\temp\apps\fslogix.zip"}
     @{url = "https://teams.microsoft.com/downloads/desktopurl?env=production&plat=windows&download=true&managedInstaller=true&arch=x64"; path = "c:\temp\apps\Teams.msi"}
     @{url=  "https://go.microsoft.com/fwlink/?linkid=844652"; path = "c:\temp\apps\OneDriveSetup.exe"}
+    @{url=  "https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrmXv"; path = "c:\temp\apps\Microsoft.RDInfra.RDAgent.Installer-x64-1.0.3050.2500.msi"}
+    @{url=  "https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrxrH"; path = "c:\temp\apps\Microsoft.RDInfra.RDAgentBootLoader.Installer-x64.msi"}
 )
 
 foreach ($f in $files)
@@ -116,7 +142,7 @@ New-ItemProperty -Path $registryPath -Name "VHDLocations" -Value "\\churchwvd.fi
 $DouIKEY = "DIXXXXXXXXXXXXXXXXXXXX"
 $DuoSKEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 $DouHostAPI = "api-xxxxxxxx.duosecurity.com"
-$DouArguments = @('/S', '/V"', '/qn', "IKEY='$DouIKEY'", "SKEY='$DuoSKEY'", "HOST='$DouHostAPI'", 'AUTOPUSH="#1"', 'FAILOPEN="#1"', 'SMARTCARD="#1"', 'RDPONLY="#0"', 'UAC_PROTECTMODE=#2')
+$DouArguments = @('/S', '/V"', '/qn', "IKEY=$DouIKEY", "SKEY=$DuoSKEY", "HOST=$DouHostAPI", 'AUTOPUSH="#1"', 'FAILOPEN="#1"', 'SMARTCARD="#0"', 'RDPONLY="#0"', 'UAC_PROTECTMODE=#2')
 
 echo $DouArguments
 
@@ -127,9 +153,20 @@ $scriptActionDuration = (get-date) - $scriptActionStartTime
 Write-Host "*** DOU Install time: "$scriptActionDuration.Minutes "Minute(s), " $scriptActionDuration.seconds "Seconds and " $scriptActionDuration.Milliseconds "Milleseconds"
 
 
-```
+reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services" /v fResetBroken /t REG_DWORD /d 1 /f
+reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services" /v MaxIdleTime /t REG_DWORD /d 43200000 /f
+reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services" /v MaxConnectionTime /t REG_DWORD /d 43200000 /f
+reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services" /v MaxDisconnectionTime /t REG_DWORD /d 600000 /f
+reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services" /v RemoteAppLogoffTimeLimit /t REG_DWORD /d 0 /f
 
+reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Printers\PointAndPrint" /v NoWarningNoElevationOnInstall /t REG_DWORD /d 1 /f
+reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Printers\PointAndPrint" /v UpdatePromptSettings /t REG_DWORD /d 1 /f
+
+```
 Read logs: %ProgramData%\FSLogix\Logs
 
+---
+### REFERENCES
+[Original Microsoft Policies TerminalServer-Server](https://admx.help/?Category=Windows_8.1_2012R2&Policy=Microsoft.Policies.TerminalServer-Server::TS_SESSIONS_RemoteApp_End_Timeout)
 
 
