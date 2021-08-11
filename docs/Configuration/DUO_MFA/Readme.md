@@ -8,7 +8,6 @@ parent: Configuration
 ---
 
 # DUO protect Microsoft Azure Active Directory
-see https://duo.com/docs/azure-ca 
 
 Login https://duosecurity.com 
 and go to Application - Protect an Application   
@@ -71,3 +70,7 @@ Enable policy set "ON", if you get error with setup to on.
 Need go to Azure AD - Properties - Manage Security defaults and 
 Enable Security defaults switch to "No"  
 to be continued ....!!!
+
+---
+### REFERENCES
+[Original DUO Azure CA](https://duo.com/docs/azure-ca)

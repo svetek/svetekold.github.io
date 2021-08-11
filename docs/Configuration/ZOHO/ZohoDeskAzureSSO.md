@@ -46,4 +46,6 @@ This section describes how to configure Microsoft Azure Active Directory to prov
 14. Click Save.
 15. Back in Zoho Desk, check the Enable Signup option on the SAML page to allow new users to log in for the first time and then click Save.  
   
-Original URL: https://help.zoho.com/portal/en/kb/desk/for-administrators/user-access-and-security/articles/setting-up-saml-single-signon-for-help-center#Microsoft_Azure_AD  
+---
+### REFERENCES
+[Original setting up saml single signon for help center Microsoft_Azure_AD](https://help.zoho.com/portal/en/kb/desk/for-administrators/user-access-and-security/articles/setting-up-saml-single-signon-for-help-center#Microsoft_Azure_AD)

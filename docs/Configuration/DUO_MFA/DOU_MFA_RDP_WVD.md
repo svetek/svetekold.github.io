@@ -8,7 +8,6 @@ parent: Configuration
 ---
 # DUO MFA for RDP or WVD
 If we want use DUO MFA on WVD, we must install DUO agent on all Windows 10 VMs for support authorisation DUO MFA.   
-see original docs on: https://duo.com/docs/rdp  
 
 ## Protect RDP on DUO
 1. Go to Application and press Protect an Application   
@@ -32,3 +31,8 @@ When you try reconnect to VM again, you will see:
 ![](images/DUO_MFA_RDP/DUO_Windows_Login.png)
 
 also need enroll users in DUO MFA.  
+
+---
+### REFERENCES
+[DUO DOCS MFA RDP](https://duo.com/docs/rdp)
+
