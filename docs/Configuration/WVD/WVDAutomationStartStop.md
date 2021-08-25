@@ -15,7 +15,7 @@ parent: Configuration
 # AVD Start and Stop VMs (WVD)  
 ## AVD Auto Start VM when user connecting 
 ### Set permissions for AVD start VMs  
-Firstly need add permissions WVD services for start VM if they stoped.   
+Firstly need add permissions AVD (WVD) services for start VM if they stoped.   
   
 Go to on portal.azure.com -> Home -> Subscription -> < Subscription name > -> Access control (IAM)
    
