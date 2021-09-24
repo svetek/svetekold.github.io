@@ -15,7 +15,7 @@ parent: Configuration
 # AVD Start and Stop VMs (WVD)  
 ## AVD Auto Start VM when user connecting 
 ### Set permissions for AVD start VMs  
-Firstly need add permissions WVD services for start VM if they stoped.   
+Firstly need add permissions AVD (WVD) services for start VM if they stoped.   
   
 Go to on portal.azure.com -> Home -> Subscription -> < Subscription name > -> Access control (IAM)
    
@@ -122,7 +122,22 @@ select host.json file and add
   
 for logging details trace mode, press "Save"  
   
-go to "Overview"  and press "Restart"  
+go to "Overview"  and press "Restart"   
+
+Select function.json file for setup time run script (CRON RULE), run script every 3 hours.    
+
+```
+{
+  "bindings": [
+    {
+      "name": "Timer",
+      "type": "timerTrigger",
+      "direction": "in",
+      "schedule": "0 0 */3 * * *"
+    }
+  ]
+}
+```
 
 Next, go to the Session Host VM Resource Group.  It is possible to deploy Session Host to a Resource Group different from the Windows Virtual Desktop Host Pool.  Be sure to set RBAC permissions on the VM Resource Group.  
 

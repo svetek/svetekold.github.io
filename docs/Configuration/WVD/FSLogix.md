@@ -84,7 +84,7 @@ And need make sync use Azure Connect!!!
 
 
 
-## Install FSLogix Agent on WVD VMs
+## Install FSLogix Agent on AVD (WVD) VMs
 ```
 $registryPath = "HKLM:\SOFTWARE\FSLogix\Profiles"
 

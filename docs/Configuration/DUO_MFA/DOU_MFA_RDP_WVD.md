@@ -1,13 +1,13 @@
 ---
 layout: default
-title: DUO MFA for RDP or WVD
+title: DUO MFA for RDP or AVD (WVD)
 nav_order: 2
 nav_exclude: false
 has_children: false
 parent: Configuration
 ---
-# DUO MFA for RDP or WVD
-If we want use DUO MFA on WVD, we must install DUO agent on all Windows 10 VMs for support authorisation DUO MFA.   
+# DUO MFA for RDP or AVD (WVD)
+If we want use DUO MFA on AVD (WVD), we must install DUO agent on all Windows 10 VMs for support authorisation DUO MFA.   
 
 ## Protect RDP on DUO
 1. Go to Application and press Protect an Application   

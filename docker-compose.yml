@@ -4,10 +4,16 @@ services:
   jekyll:
     build:
       context: ./
-    ports:
-      - 4000:4000
+#    ports:
+#      - 4000:4000
     volumes:
       - .:/usr/src/app
     stdin_open: true
     tty: true
-    command: bundle exec jekyll serve -H 0.0.0.0 -t
+    command: jekyll serve --host 0.0.0.0 --force_polling
+  nginx-proxy:
+    image: nginx
+    ports:
+      - 4000:80
+    volumes:
+      - ./nginx-default.conf:/etc/nginx/conf.d/default.conf
