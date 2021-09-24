@@ -96,6 +96,20 @@ Select "Assigned" mode and press OK
 
 run gpupdate command in powershell console on DC  
 
+### Check ExtendedRights permissions on OU
+To get information on the groups and users able to read the password (ms-MCS-AdmPwd) for a specific Organizational Unit (OU), run the following command.  
+```
+Find-AdmPwdExtendedRights -identity "CN=Computers,DC=vixon,DC=local" | Format-Table ExtendedRightHolders
+```
+
+### Set all passwords
+```
+Get-ADComputer -Filter * -SearchBase “CN=Computers,DC=vixon,DC=local” | Reset-AdmPwdPassword -ComputerName {$_.Name}
+```
+### List all passwords 
+```
+Get-ADComputer -Filter * -SearchBase "CN=Computers,DC=vixon,DC=local" | Get-AdmPwdPassword -ComputerName {$_.Name}
+```
 
 ## REFERENCES
 [INSTALLATION LAPS](https://www.veeam.com/blog/microsoft-laps-deployment-configuration-troubleshoot-guide.html)
