@@ -89,6 +89,9 @@ Press New fileshare and type name: fslogixpe
     FSLogix Share Elevated Contributor
     FSLogix Share Contributor
 
+You can use only one Security Group "FSLogix Share Contributor" for provide access to FSLogix profiles.  
+If you want make changes NTFS permissions, need second group "FSLogix Share Elevated Contributor" for admin staff.  
+
 Add members AVD Users to the FSLogix Share Contributor Group and need make sync use Azure Connect!!!
 
 ## Grand access for security groups access to fileshare fslogixpe  
