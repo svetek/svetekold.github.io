@@ -13,6 +13,48 @@ parent: Configuration
 {:toc}
 # Deploy Azure Virtual Desktop (WVD) HOSTPOOL  
   --- on moderation ---
+## Auto Start Virtual Machine on Connect
+The Start Virtual Machine (VM) on Connect feature lets you save costs by allowing end users to turn on their VMs only when they need them. You can then turn off VMs when they're not needed.  
+### Create a custom role for Start VM on Connect
+Before you can configure the Start VM on Connect feature, you'll need to assign your VM a custom RBAC (role-based access control) role. This role will let Azure Virtual Desktop manage the VMs in your subscription.  
+
+1. Open the Azure portal and go to Subscriptions.
+   ![](./images/AVD_AUTOSTART_01.png)   
+2. Go to Access control (IAM) and select Add a custom role.  
+   ![](./images/AVD_AUTOSTART_02.png)    
+3. Next, name the custom role and add a description. We recommend you name it “start VM on connect.”  
+   ![](./images/AVD_AUTOSTART_03.png)  
+4. On the Permissions tab, add one of the two following sets of permissions to the subscription you're assigning the role to:  
+```yaml
+Microsoft.Compute/virtualMachines/start/action
+Microsoft.Compute/virtualMachines/read
+Microsoft.Compute/virtualMachines/instanceView/read 
+```
+![](./images/AVD_AUTOSTART_08.png)  
+5. When you're finished, select Ok.
+
+After that, you'll need to assign the role to grant access to Azure Virtual Desktop.
+To assign the custom role:
+1. In the Access control (IAM) tab, select Add role assignments.
+   ![](./images/AVD_AUTOSTART_10.png)  
+
+2. Select the role you just created.
+   ![](./images/AVD_AUTOSTART_11.png)  
+
+3. In the search bar, enter and select Windows Virtual Desktop (this will soon be updated to "Azure Virtual Desktop").
+
+### Configure the Start VM on Connect feature  
+Start VM on Connect is a host pool setting. If you only want a select group of users to use this feature, make sure you only assign the required role to the users you want to add.  
+To use the Azure portal to configure Start VM on Connect:
+1. Open your browser and go to the Azure portal.
+2. In the Azure portal, go to Azure Virtual Desktop.
+3. Select Host pools, then go to the host pool where you want to enable the setting.
+4. In the host pool, select Properties. Under Start VM on connect, select Yes, then select Save to instantly apply the setting.  
+   ![](./images/AVD_AUTOSTART_13.png)  
+
+### REFERENCES  
+[Microsoft Start Virtual Machine on Connect](https://docs.microsoft.com/en-us/azure/virtual-desktop/start-virtual-machine-connect)
+
 # Prepare AVD VM (WVD)
 ## ENABLE Acelerator Network on VM D2sV4
 
