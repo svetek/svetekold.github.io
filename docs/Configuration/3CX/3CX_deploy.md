@@ -6,6 +6,11 @@ nav_exclude: false
 has_children: false
 parent: Configuration
 ---
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC 
+{:toc}
 # 3CX Deploy on Azure
 
 ## Create VM 3CX Phone System on Microsoft Azure Portal  
@@ -79,5 +84,20 @@ Now you can see instance on customer portal 3CX, done.
   
 ![](images/3CX_deploy_azure_16.png)
 
+## Open ports on Firewall VM 3CX Phone System 
+
+For Azure need add 2 rules for open RTP trafic:  
+1. UDP 9000-10999  
+2. UDP 7000-8999  
+  
+Table with description 3CX ports
+PROTOCOL | PORT (DEFAULT) | DESCRIPTION | PORT FORWARDING REQUIRED
+TCP | 5001 or 443 | HTTPs port of Web Server. This port can be configured | Yes – if you intend on using a 3CX client, Bridge Presence, Remote IP Phones from outside your LAN and 3CX WebMeeting functionality
+TCP | 5015 | This port is used for the online Web-Based installer wizard (NOT 3CX config command line tool) only during the installation process | Optional - During the installation process when the Web-Based installer is used from external source
+UDP & TCP | 5060 | 3CX Phone System (SIP) | Yes – if you intend on using VoIP Providers and Remote Extensions that are NOT using the 3CX Tunnel Protocol / 3CX SBC
+TCP | 5061 | 3CX Phone System (SecureSIP) TLS | Yes – if you intend on using Secure SIP remote extensions
+UDP & TCP | 5090 | 3CX Tunnel Protocol Service Listener | Yes -if you intend on using remote extensions using the 3CX Tunnel Protocol (within the 3CX clients for Windows / Android / iOS) or when using the 3CX Session Border Controller
+UDP | 9000-10999 7000-8999 | 3CX Media Server (RTP) – WAN audio/video/t38 streams  3CX Media Server (RTP) – LAN audio/video/t38 streams | Yes – if you intend on using remote extensions, WebRTC or a VoIP Provider  No - If you have strict routing on your LAN though, you must allow traffic from/to your 3CX server on there ports (Also applies to site-to-site VPNs)
+TCP | 2528 | 3CX SMTP Server - Must allow PBX passthrough on the network for the PBX to send email notifications via the 3CX SMTP | No
 
 
