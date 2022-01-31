@@ -90,7 +90,7 @@ For Azure need add 2 rules for open RTP trafic:
 1. UDP 9000-10999  
 2. UDP 7000-8999  
   
-Table with description 3CX ports
+Table with description 3CX ports  
 PROTOCOL | PORT (DEFAULT) | DESCRIPTION | PORT FORWARDING REQUIRED
 TCP | 5001 or 443 | HTTPs port of Web Server. This port can be configured | Yes – if you intend on using a 3CX client, Bridge Presence, Remote IP Phones from outside your LAN and 3CX WebMeeting functionality
 TCP | 5015 | This port is used for the online Web-Based installer wizard (NOT 3CX config command line tool) only during the installation process | Optional - During the installation process when the Web-Based installer is used from external source
@@ -117,7 +117,11 @@ On Provision phone numbers windows select "Business Calling" and press Next butt
 Select phone number which you need and press "Provision" button  
 ![](images/3CX_aws_chime_05.png)
 Switch to the "Invetory" tab and you can see your selected phone number  
-  
+
+For set calling name, select PSTN number and press Actions -> Update default calling name, set name and save. Information will be updated after 7 days.   
+![](images/3CX_aws_chime_24.png)
+
+
 ### Create Voice connector for 3CX  
 Go to Voice connectors and create new one  
 ![](images/3CX_aws_chime_07.png)  
