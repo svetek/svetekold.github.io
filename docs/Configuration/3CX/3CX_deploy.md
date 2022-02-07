@@ -3,7 +3,7 @@ layout: default
 title: 3CX Deploy on Azure 
 nav_order: 2
 nav_exclude: false
-has_children: false
+has_children: true
 parent: Configuration
 ---
 ## Table of contents
