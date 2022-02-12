@@ -1,4 +1,11 @@
-
+---
+layout: default
+title: Script for enable TLS 1.2
+nav_order: 11
+nav_exclude: false
+has_children: false
+parent: Configuration
+---
 
 ## Script for enable TLS 1.2
 ```
