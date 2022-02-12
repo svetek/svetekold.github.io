@@ -4,12 +4,12 @@ email: support@svetek.com
 #  Site description meta data for SEO.
 #  Multiline example.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+#url: "" # the base hostname & protocol for your site, e.g. http://example.com
 remote_theme: pmarsceill/just-the-docs
 #remote_theme: svrooij/just-the-docs@relative-everything
 
 # Build settings
-theme: "just-the-docs"
+#theme: "just-the-docs"
 # plugins:
 
 # Exclude from processing.
