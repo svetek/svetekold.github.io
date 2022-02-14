@@ -1,10 +1,10 @@
 ---
 layout: default
 title: 3CX Configure IP Phones
-nav_order: 1
+nav_order: 3
 nav_exclude: false
 has_children: false
-parent: 3CX Deploy on Azure
+parent: 3CX Phone system
 grand_parent: Configuration
 ---
 ## Table of contents
@@ -18,7 +18,7 @@ Create Excel file with next column, Example:
 
 | Vendor       | Model    |      MAC     | 3CX Extension | FirstName | LastName |
 |:-------------|:---------|:-------------|:--------------|:----------|:---------|
-| FANVIL       | Х7       | 00B8B32C0412 | 104           | Maksim    | Dogonov  |
+| FANVIL       | Х7       | 00B8B32C0412 | 104           | Tom       | Sawyer   |
 
 MAC IP Phones you can get it white label on back side. 
 
