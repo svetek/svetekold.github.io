@@ -30,9 +30,13 @@ Switch to the "Invetory" tab and you can see your selected phone number
 For set calling name, select PSTN number and press Actions -> Update default calling name, set name and save. Information will be updated after 7 days.   
 ![](images/3CX_aws_chime_24.png)
 
-
 ### Create Voice connector for 3CX
-Go to Voice connectors and create new one  
+Create voice connector group   
+![](images/3CX_aws_chime_25.png)    
+
+Go to Voice connectors and create two one each on different region (US West, US East)  
+![](images/3CX_aws_chime_27.png)  
+
 ![](images/3CX_aws_chime_07.png)  
 Fill Voice connector name and select AWS region, Encryption mode switch to Disabled  
 ![](images/3CX_aws_chime_08.png)  
@@ -51,6 +55,18 @@ In Inbound routes section press "New" button and fill fields:
 ![](images/3CX_aws_chime_14.png)  
 Next step need assign phone number to created voice connector. On "Phone numbers" tab press Assign from inventory button and select PSTN number witch you want assign.   
 ![](images/3CX_aws_chime_15.png)
+
+Now we have created two voice connectors with same settings on different regions  
+![](images/3CX_aws_chime_26.png)  
+
+Open Voice group and on general tab add two voice connectors. Set Voice trunk priority  
+![](images/3CX_aws_chime_29.png)  
+![](images/3CX_aws_chime_28.png)  
+
+Go to Phone numbers and Assign Phone numbers to the Voice group   
+![](images/3CX_aws_chime_31.png)  
+![](images/3CX_aws_chime_30.png)     
+
 ## Configuration AWS SIP Connector on 3CX
 Open 3CX web ui admin panel and go to SIP Trunks, press "Add SIP Trunk" need select "Amazone Chime Voice Connector"  
 ![](images/3CX_aws_chime_16.png)   
@@ -89,26 +105,11 @@ Go to Outbound Rules:  Press Add button for create new rule:
 ![](images/3CX_aws_chime_22.png)  
 ![](images/3CX_aws_chime_23.png)  
 
-# 3CX and AWS Chaim faxes 
-## Inbound faxes 
-For turn on fax server, go to 3CX WEB UI -> Advanced -> Fax Server  
-![](images/3CX_FAXES_01.png)  
-  
-Type Default Email Address for recive faxes, Enable G.711 to T.38 Fallback, for save press OK button     
-![](images/3CX_FAXES_02.png)  
-  
-Go to SIP Trunks, open AWS sip trunk, on DIDs tab add additional DID  
-![](images/3CX_FAXES_03.png)  
-
-Go to Inbound Routes, Add new DID rule, type Name: Fax Rule, select DID for assign.  
-Set Route calls to Send fax to -> <users who will recived fax to PDF>  
-![](images/3CX_FAXES_04.png)  
-
-## Outbound fax 
-For outboud faxes, need use ATA devices with fax machine.  
-Or use software for SipToFax, like:  
-http://www.t38faxvoip.com/  
-
 ## References 
 https://www.3cx.com/docs/amazon-chime-voice-connector-sip-trunk/  
 https://docs.aws.amazon.com/chime/latest/ag/network-config.html#bandwidth   
+
+
+
+  
+
