@@ -14,6 +14,14 @@ grand_parent: User Guides
 {:toc}
    
 # 3CX User Guide  
+## To change your avatar (or profile picture) on your 3CX account
+follow these steps:
+1. Log into the 3CX Web Client using the credentials in your welcome email  
+2. Click on "Settings" (The wrench icon.)3CX Webclient Settings Button  
+![](images/3CX_use_profile.png)  
+3. Upload a new avatar for your account   
+4. You will be prompted to resize your Avatar. Press OK to confirm  
+   
 
 ## Place an external call
 To make a call outside of the organization, pick up the phone dial the 12, 11, 10 digit US only number you wish to call, then press Send. This can also be done by dialing the number first, then picking up the handset or pressing the speakerphone button. Dialing 1 first is optional, will work either way.
