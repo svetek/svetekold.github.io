@@ -16,7 +16,7 @@ grand_parent: User Guides
 # 3CX User Guide  
 
 ## Place an external call
-To make a call outside of the organization, pick up the phone dial the 12, 11, 10 digit number you wish to call, then press Send. This can also be done by dialing the number first, then picking up the handset or pressing the speakerphone button. Dialing 1 first is optional, will work either way.
+To make a call outside of the organization, pick up the phone dial the 12, 11, 10 digit US only number you wish to call, then press Send. This can also be done by dialing the number first, then picking up the handset or pressing the speakerphone button. Dialing 1 first is optional, will work either way.
 
     Example:
         +18884564566
