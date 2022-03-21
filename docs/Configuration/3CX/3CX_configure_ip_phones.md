@@ -54,7 +54,9 @@ For save all changes on top page press «Ok» button
 Open WEB UI phones http://<ip adress>
 Goto to Auto provision tab 
 
-**Update firmware:**  
+**Update firmware:**
+**Factory reset phone**  
+**Update original fanvil firmware first**
 **download 3CX firmware from:** https://www.3cx.com/support/phone-firmwares/  
 **And make update:** https://www.3cx.com/sip-phones/firmware-update-fanvil/  
   
