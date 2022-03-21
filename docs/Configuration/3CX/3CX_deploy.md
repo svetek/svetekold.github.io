@@ -104,6 +104,14 @@ Table with description 3CX ports
 | UDP          | 9000-10999 7000-8999 | 3CX Media Server (RTP) – WAN audio/video/t38 streams  3CX Media Server (RTP) – LAN audio/video/t38 streams | Yes – if you intend on using remote extensions, WebRTC or a VoIP Provider  No - If you have strict routing on your LAN though, you must allow traffic from/to your 3CX server on there ports (Also applies to site-to-site VPNs)
 | TCP          | 2528           | 3CX SMTP Server - Must allow PBX passthrough on the network for the PBX to send email notifications via the 3CX SMTP | No
 
+## Allow Phones with 3d party firmware
+For allow SIP Phones with 3d party firmware connect to 3CX, go to Phones and press "Options" button     
+![](images/3CX_deploy_azure_19.png)  
+Enable "Allow alternative firmware"  
+![](images/3CX_deploy_azure_20.png)  
+and press "Ok"
+  
+
 Reference:  
   
 https://www.3cx.com/docs/ports/  
